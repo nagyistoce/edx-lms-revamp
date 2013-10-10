@@ -1,0 +1,260 @@
+// edX: LMS - Variables
+// ====================
+
+// units
+$baseline-v: 20px;                                                  // vertical baseline
+$baseline-h: 20px;                                                  // horizontal baseline
+
+// ====================
+
+// colors - basic
+$black: hsla(0%, 0%, 5%, 1.0);                                      // system black
+$black-t: hsla(0%, 0%, 0%, 1.0);
+$black-t0: rgba($black,0.125);
+$black-t1: rgba($black,0.25);
+$black-t2: rgba($black,0.50);
+$black-t3: rgba($black,0.75);
+
+$white: hsla(0%, 0%, 95%, 1.0);                                     // system white
+$white-t: hsla(0%, 0%, 100%, 1.0);
+$white-t0: rgba($white,0.125);
+$white-t1: rgba($white,0.25);
+$white-t2: rgba($white,0.50);
+$white-t3: rgba($white,0.75);
+
+$gray: rgb(53, 58, 61);
+$gray-l1: tint($gray,20%);
+$gray-l2: tint($gray,40%);
+$gray-l3: tint($gray,60%);
+$gray-l4: tint($gray,80%);
+$gray-l5: tint($gray,90%);
+$gray-l6: tint($gray,95%);
+$gray-d1: shade($gray,20%);
+$gray-d2: shade($gray,40%);
+$gray-d3: shade($gray,60%);
+$gray-d4: shade($gray,80%);
+$gray-d5: shade($gray,90%);
+$gray-d6: shade($gray,95%);
+$gray-t0: rgba($gray,0.125);
+$gray-t1: rgba($gray,0.25);
+$gray-t2: rgba($gray,0.50);
+$gray-t3: rgba($gray,0.75);
+
+// shadows
+$shadow: rgba($black-t,0.2);
+$shadow-l1: rgba($black-t,0.1);
+$shadow-l2: rgba($black-t,0.05);
+$shadow-d1: rgba($black-t,0.4);
+
+// colors - default
+$d-blue: hsla(56%, 55%, 49%, 1.0);
+$d-blue-l1: tint($d-blue,20%);
+$d-blue-l2: tint($d-blue,40%);
+$d-blue-l3: tint($d-blue,60%);
+$d-blue-l4: tint($d-blue,80%);
+$d-blue-l5: tint($d-blue,90%);
+$d-blue-d1: shade($d-blue,20%);
+$d-blue-d2: shade($d-blue,40%);
+$d-blue-d3: shade($d-blue,60%);
+$d-blue-d4: shade($d-blue,80%);
+$d-blue-d5: shade($d-blue,90%);
+$d-blue-s1: saturate($d-blue,15%);
+$d-blue-s2: saturate($d-blue,30%);
+$d-blue-s3: saturate($d-blue,45%);
+$d-blue-u1: desaturate($d-blue,15%);
+$d-blue-u2: desaturate($d-blue,30%);
+$d-blue-u3: desaturate($d-blue,45%);
+$d-blue-t0: rgba($d-blue,0.125);
+$d-blue-t1: rgba($d-blue,0.25);
+$d-blue-t2: rgba($d-blue,0.50);
+$d-blue-t3: rgba($d-blue,0.75);
+
+$d-green: hsla(37%, 39%, 51%, 1.0);
+$d-green-l1: tint($d-green,20%);
+$d-green-l2: tint($d-green,40%);
+$d-green-d1: shade($d-green,20%);
+$d-green-d2: shade($d-green,40%);
+$d-green-s1: saturate($d-green,15%);
+$d-green-s2: saturate($d-green,30%);
+$d-green-u1: desaturate($d-green,15%);
+$d-green-u2: desaturate($d-green,30%);
+$d-green-t0: rgba($d-green,0.125);
+$d-green-t1: rgba($d-green,0.25);
+$d-green-t2: rgba($d-green,0.50);
+$d-green-t3: rgba($d-green,0.75);
+
+$d-yellow: hsla(4%, 80%, 71%, 1.0);
+$d-yellow-l1: tint($d-yellow,20%);
+$d-yellow-l2: tint($d-yellow,40%);
+$d-yellow-d1: shade($d-yellow,20%);
+$d-yellow-d2: shade($d-yellow,40%);
+$d-yellow-s1: saturate($d-yellow,15%);
+$d-yellow-s2: saturate($d-yellow,30%);
+$d-yellow-u1: desaturate($d-yellow,15%);
+$d-yellow-u2: desaturate($d-yellow,30%);
+$d-yellow-t0: rgba($d-yellow,0.125);
+$d-yellow-t1: rgba($d-yellow,0.25);
+$d-yellow-t2: rgba($d-yellow,0.50);
+$d-yellow-t3: rgba($d-yellow,0.75);
+
+$d-red: hsla(16%, 69%, 60%, 1.0);
+$d-red-l1: tint($d-red,20%);
+$d-red-l2: tint($d-red,40%);
+$d-red-d1: shade($d-red,20%);
+$d-red-d2: shade($d-red,40%);
+$d-red-s1: saturate($d-red,15%);
+$d-red-s2: saturate($d-red,30%);
+$d-red-u1: desaturate($d-red,15%);
+$d-red-u2: desaturate($d-red,30%);
+$d-red-t0: rgba($d-red,0.125);
+$d-red-t1: rgba($d-red,0.25);
+$d-red-t2: rgba($d-red,0.50);
+$d-red-t3: rgba($d-red,0.75);
+
+
+
+// ====================
+
+// fonts
+$f-serif: 'PT Serif', Cambria, Georgia, 'Times New Roman', Times, serif;
+$f-sans-serif: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+$f-monospace: 'Bitstream Vera Sans Mono', Consolas, Courier, monospace;
+
+// ====================
+
+// grid
+@import "neat/neat-helpers";
+
+// grid (neat-based)
+$max-width: 1280px;
+$min-width: 700px;
+$grid-columns: 12;                                                  // make grid 12 columns
+$gutter: $baseline-v;                                                 // gutter b/t columns
+
+// grid (neat-based) - responsive
+$bp-m: new-breakpoint(max-width 500px 4);                           // mobile devices - make grid 4 columns
+$bp-ds: new-breakpoint(min-width 500px max-width 760px 6);          // small displays - make grid 6 columns
+$bp-dm: new-breakpoint(min-width 760px max-width 1024px 12);        // medium displays - make grid 12 columns
+$bp-dl: new-breakpoint(min-width 1024px 12);                        // medium displays - make grid 12 columns
+
+// ====================
+
+// timing - used for animation/transition mixin syncing
+$tmg-s3: 3.0s;
+$tmg-s2: 2.0s;
+$tmg-s1: 1.0s;
+$tmg-avg: 0.75s;
+$tmg-f1: 0.50s;
+$tmg-f2: 0.25s;
+$tmg-f3: 0.125s;
+
+// ====================
+
+// copy
+$cpy-pdf: 'This is a PDF Document';
+$cpy-ppt: 'This is a Power Point Document';
+$cpy-zip: 'This is a .zip file';
+$cpy-img: 'This is an image/graphic';
+
+// ====================
+
+// application: general colors
+$color-confirm: $d-green;
+$color-warning: $d-yellow;
+$color-error: $d-red;
+$color-status: $d-blue;
+$color-input: $d-blue-s1;
+
+// ====================
+
+// application: actions & links
+$bg-action-primary: $d-blue;
+$bg-action-primary-focus: $d-blue-s1;
+$bordercolor-action-primary: $d-blue-s1;
+$bordercolor-action-primary-focus: $d-blue-s2;
+$color-action-primary: $d-blue-l5;
+$color-action-primary-focus: $white;
+
+$bg-action-secondary: $d-blue-l3;
+$bg-action-secondary-focus: $d-blue-l1;
+$bordercolor-action-secondary: $d-blue-l1;
+$bordercolor-action-secondary-focus: $d-blue-l1;
+$color-action-secondary: $d-blue;
+$color-action-secondary-focus: $d-blue-l4;
+
+$bg-action-tertiary: $gray-l1;
+$bg-action-tertiary-focus: $gray;
+$bordercolor-action-tertiary: $gray-l2;
+$bordercolor-action-tertiary-focus: $gray-l1;
+$color-action-tertiary: $white;
+$color-action-tertiary-focus: $white;
+
+$bg-action-quarternary: transparent;
+$bg-action-quarternary-focus: $d-blue-t1;
+$bordercolor-action-quarternary: transparent;
+$bordercolor-action-quarternary-focus: $d-blue-t2;
+$color-action-quarternary: $d-blue;
+$color-action-quarternary-focus: $d-blue-s1;
+
+$color-link: $d-blue;
+$color-link-hover: $d-blue-s1;
+$color-link-active: $d-blue-s1;
+$color-link-visited: $d-blue-d1;
+
+// ====================
+
+// application: copy & headings
+
+$color-heading: $black;
+$color-heading-secondary: $gray-d4;
+$color-heading-tertiary: $gray-d2;
+
+$color-copy: $gray-d1;
+
+// ====================
+
+// application: states
+$bg-selected: $d-blue-t1;
+$color-selected: $d-blue-s1;
+
+// ====================
+
+// application: page elements
+$bg-header--main: $white;
+$color-header--main: $black;
+
+$bg-content--main: $gray-l5;
+$color-content--main: $gray-d1;
+
+$bg-footer--main: $white;
+$color-footer--main: $gray-l1;
+
+// application: course elements
+// $color-navcourse: $color-link;
+// $color-navcourse-hover: $color-link-hover;
+// $bg-navcourse: transparent;
+// $bg-navcourse-hover: transparent;
+
+// ====================
+
+// application: forms
+$bg-formfield: $white;
+$bg-formfield-focused: $d-blue-l4;
+$bg-formfield-disabled: $gray-l5;
+$bordercolor-formfield: $gray-l3;
+$bordercolor-formfield-focused: $d-blue;
+$bordercolor-formfield-disabled: $gray-l5;
+$color-formfield: $black;
+$color-formfield-focused: $d-blue-s1;
+$color-formfield-disabled: $gray-l5;
+
+$color-formfieldtip: $gray-l2;
+$color-formfieldtip-focused: $d-blue;
+$color-formfieldtip-disabled: $gray-l3;
+
+// ====================
+
+// application: visual rows
+$bg-row: $white;
+$bg-row-hover: $d-blue-l5;
+$bg-row-alt: $gray-l5;

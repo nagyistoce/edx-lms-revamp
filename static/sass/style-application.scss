@@ -1,0 +1,78 @@
+// edX: LMS Application Style Compilation
+// ====================
+
+// BASE - libs and resets *do not edit*
+@import 'utilities/bourbon/bourbon';        // http://bourbon.io
+@import 'utilities/neat/neat';              // http://neat.bourbon.io
+@import 'utilities/reset';                  // general reset
+
+
+// Utilities and Assets
+// ====================
+// BASE - utilities
+@import 'utilities/variables';              // settings/values/placeholders
+@import 'utilities/mixins';                 // re-usable utility and non-standalone rules
+
+// BASE - assets
+@import 'assets/fonts';                     // imported/used fonts
+@import 'assets/graphics';                  // sprites, basic img/figure/svg styling
+@import 'assets/anims';                     // css-based animations
+
+// THEME - utilities + assets overrides
+// instance/theme specific definitions for known variables can override ones that were previously set
+// FOR: General platform users audience
+// ====================
+@import 'theme/edx/variables';              // theme variables to override/support default
+@import 'theme/edx/assets';                 // theme assets to override/support default
+
+
+// General, Elements, and Views
+// ====================
+// BASE - foundation
+@import 'base';
+
+// BASE - elements
+@import 'elements/typography';
+@import 'elements/controls';                // buttons, link styles, sliders, etc.
+@import 'elements/navigation';              // all archetypes of navigation
+@import 'elements/header';                  // view/app headers
+@import 'elements/footer';                  // view/app footers
+@import 'elements/forms';                   // form elements
+@import 'elements/modal';                   // interstitial UI, dialogs, modal windows
+@import 'elements/system-feedback';         // alerts, notifications, states
+@import 'elements/system-help';             // help UI
+@import 'elements/xblocks';                 // xblock support and styling
+
+// BASE - specific views/areas of app
+@import 'views/system';                     // error, maintenance, announcement pages
+@import 'views/onboarding';                 // prospective student/user views - sign up, course listings/details, help
+@import 'views/account';                    // account-related actions - pw reset, login, settings, etc.
+@import 'views/dashboard-student';          // student dashboard
+@import 'views/dashboard-instructor';       // overrides/additions to student dashboard
+@import 'views/course';                     // general courseware
+@import 'views/course-updates';             // course announcements/updates/news
+@import 'views/course-discussion';          // course news
+@import 'views/course-progress';            // course progress
+@import 'views/course-wiki';                // course wiki
+@import 'views/course-instructor';          // overrides/additions to general courseware
+@import 'views/course-exam';                // when a course is in "exam-mode"
+@import 'views/course-demo';                // when a course is partially available/can be sampled
+@import 'views/course-past';                // when a course has ended
+@import 'views/proctored-exams-reg';        // specific in-person exam registration/mgmt
+
+// BASE - contextual
+@import 'contexts/print';                   // basic print styling
+@import 'contexts/ie';                      // ie-specific styling
+
+// BASE - misc.
+@import 'shame';                            // shame file - used for any bad-form/orphaned scss that knowingly violate edX FED architecture/standards (see - http://csswizardry.com/2013/04/shame-css/)
+
+
+// THEME - General, Elements, and Views
+// FOR: platform users with CSS/Sass/Design experience
+// manual overrides for General, Elements, and Views
+// ====================
+@import 'theme/edx/base';                   // theme override/extension for all views (base theme if no app settings/theme assets provided)
+@import 'theme/edx/elements';               // theme override/extension for all views (base theme if no app settings/theme assets provided)
+@import 'theme/edx/views';                  // theme override/extension for all views (base theme if no app settings/theme assets provided)
+@import 'theme/edx/contexts';               // theme override of all context cases  (base theme if no app settings/theme assets provided)
