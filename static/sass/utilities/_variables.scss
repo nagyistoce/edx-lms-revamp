@@ -8,15 +8,15 @@ $baseline-h: 20px;                                                  // horizonta
 // ====================
 
 // colors - basic
-$black: hsla(0%, 0%, 5%, 1.0);                                      // system black
-$black-t: hsla(0%, 0%, 0%, 1.0);
+$black: rgb(15,15,15);                                              // system black
+$black-t: rgb(0,0,0);
 $black-t0: rgba($black,0.125);
 $black-t1: rgba($black,0.25);
 $black-t2: rgba($black,0.50);
 $black-t3: rgba($black,0.75);
 
-$white: hsla(0%, 0%, 95%, 1.0);                                     // system white
-$white-t: hsla(0%, 0%, 100%, 1.0);
+$white: rgb(240,240,240);                                          // system white
+$white-t: rgb(255,255,255);
 $white-t0: rgba($white,0.125);
 $white-t1: rgba($white,0.25);
 $white-t2: rgba($white,0.50);
@@ -47,7 +47,7 @@ $shadow-l2: rgba($black-t,0.05);
 $shadow-d1: rgba($black-t,0.4);
 
 // colors - default
-$d-blue: hsla(56%, 55%, 49%, 1.0);
+$d-blue: rgb(58, 162, 224);
 $d-blue-l1: tint($d-blue,20%);
 $d-blue-l2: tint($d-blue,40%);
 $d-blue-l3: tint($d-blue,60%);
@@ -69,7 +69,7 @@ $d-blue-t1: rgba($d-blue,0.25);
 $d-blue-t2: rgba($d-blue,0.50);
 $d-blue-t3: rgba($d-blue,0.75);
 
-$d-green: hsla(37%, 39%, 51%, 1.0);
+$d-green: rgb(95, 187, 121);
 $d-green-l1: tint($d-green,20%);
 $d-green-l2: tint($d-green,40%);
 $d-green-d1: shade($d-green,20%);
@@ -83,7 +83,7 @@ $d-green-t1: rgba($d-green,0.25);
 $d-green-t2: rgba($d-green,0.50);
 $d-green-t3: rgba($d-green,0.75);
 
-$d-yellow: hsla(4%, 80%, 71%, 1.0);
+$d-yellow: rgb(242, 212, 142);
 $d-yellow-l1: tint($d-yellow,20%);
 $d-yellow-l2: tint($d-yellow,40%);
 $d-yellow-d1: shade($d-yellow,20%);
@@ -97,7 +97,21 @@ $d-yellow-t1: rgba($d-yellow,0.25);
 $d-yellow-t2: rgba($d-yellow,0.50);
 $d-yellow-t3: rgba($d-yellow,0.75);
 
-$d-red: hsla(16%, 69%, 60%, 1.0);
+$d-orange: rgb(247, 168, 86);
+$d-orange-l1: tint($d-orange,20%);
+$d-orange-l2: tint($d-orange,40%);
+$d-orange-d1: shade($d-orange,20%);
+$d-orange-d2: shade($d-orange,40%);
+$d-orange-s1: saturate($d-orange,15%);
+$d-orange-s2: saturate($d-orange,30%);
+$d-orange-u1: desaturate($d-orange,15%);
+$d-orange-u2: desaturate($d-orange,30%);
+$d-orange-t0: rgba($d-orange,0.125);
+$d-orange-t1: rgba($d-orange,0.25);
+$d-orange-t2: rgba($d-orange,0.50);
+$d-orange-t3: rgba($d-orange,0.75);
+
+$d-red: rgb(226, 94, 100);
 $d-red-l1: tint($d-red,20%);
 $d-red-l2: tint($d-red,40%);
 $d-red-d1: shade($d-red,20%);
