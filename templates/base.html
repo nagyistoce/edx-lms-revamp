@@ -10,8 +10,8 @@
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-  <title>**[View Name]**</title>
-  <meta name="description" content="**[View Description]**">
+  <title>[View Name]</title>
+  <meta name="description" content="[View Description]">
 
   <link rel="stylesheet" href="../static/css/vendor/normalize.css" />
   <link rel="stylesheet" href="../static/css/vendor/font-awesome.css" />
@@ -19,33 +19,38 @@
   <script src="../static/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 
-<body class="view-">
+<body class="view--viewname is-stateful is-not-stateful">
 
   <!--[if lt IE 8]>
-      <p class="msg msg-browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <p class="msg msg--browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
   <div class="wrapper--view">
+    <div class="wrapper--header">
+      <header class="header--app" role="banner">
+      </header>
+    </div>
 
-    <header class="header--primary" role="banner">
+    <div class="wrapper--nav">
+      <nav class="nav nav--app" role="navigation">
 
-    </header>
+      </nav>
+    </div>
 
-    <section class="content content--view">
+    <div class="wrapper--content">
+      <section class="content content--main">
+      </section>
 
-      <article class="content__main">
-
-      </article>
-
-      <aside class="content__supplementary">
-
+      <aside class="content content--supplemental">
       </aside>
-    </section>
+    </div>
 
-    <footer class="footer--primary" role="contentinfo">
-
-    </footer>
+    <div class="wrapper--footer">
+      <footer class="footer--app" role="contentinfo">
+      </footer>
+    </div>
   </div>
+
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="../static/jsjs/vendor/jquery-1.10.2.min.js"><\/script>')</script>

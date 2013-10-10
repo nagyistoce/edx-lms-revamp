@@ -19,94 +19,325 @@
   <script src="../static/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 
-<body class="view--courseupdates">
+<body class="view--courseupdates is-loggedin is-not-loggedin">
 
   <!--[if lt IE 8]>
-      <p class="msg msg-browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <p class="msg msg--browsersupport">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
   <div class="wrapper--view">
-
     <div class="wrapper--header">
       <header class="header--app" role="banner">
 
-        <hgroup class="header-app__title">
-          <h1 class="header--app__title__logo">
+        <hgroup class="header-app__mast">
+          <h1 class="app-logo">
             <img src="../static/images/pl-5x5-000.png" alt="edX" />
           </h1>
 
-          <h2 class="header--app__title__locator">
-            <a href="" class="org-name">Org</a>
-            <a href="" class="org-course">Course</a>
+          <h2 class="app-locator">
+            <a href="#" class="course-title">
+              <span class="org">HarvardX:</span>
+              <span class="number">PH207x's</span>
+              <span class="course">Health in Numbers: Quantitative Methods in Clinical &amp; Public Health Research</span>
+            </a>
           </h2>
         </hgroup>
 
-        <!-- not logged in -->
-        <div class="header--app__account is-not-loggedin">
-          <h3 class="title">Access Your edX Account</h3>
+        <!-- STATE: not logged in -->
+        <nav class="header--app__account nav nav--account" role="navigation">
+          <h2 class="title title--section">Access Your edX Account</h2>
 
-          <ul class="nav nav--account">
-            <li class="nav-item">
-              <a href="" class="action action--login">Login</a>
+          <ol class="list--nav">
+            <li class="nav__item nav__item--login">
+              <a href="#" class="action action--login">Login</a>
             </li>
-            <li class="nav-item">
-              <a href="" class="action action--register">Register</a>
+            <li class="nav__item nav__item--register">
+              <a href="#" class="action action--register">Register</a>
             </li>
-          </ul>
-        </div>
+          </ol>
+        </nav>
 
-        <!-- logged in -->
-        <div class="header--app__account is-loggedin">
-          <h3 class="title">
-            <span class="context">Welcome, </span>
-            <span class="username">Marcotuts</span>
-          </h3>
+        <!-- STATE: logged in -->
+        <nav class="header--app__account nav nav--acount">
+          <h2 class="title title--section">Your edX Account</h2>
 
-          <ul class="nav nav--account nav--dropdown">
-            <li class="nav-item">
-              <a href="" class="action action--help">Help</a>
+          <ol class="list--nav">
+            <li class="nav__item nav--dd">
+              <div class="nav--dd__control">
+                <a href="#" class="action dd__label">
+                  <span class="">Frrrances</span>
+                </a>
+                <i class="icon-caret-down dd__toggle"></i>
+              </div>
+
+              <ul class="list--nav nav--dd__menu">
+                <li class="nav__item nav__item--help">
+                  <a href="#" class="action">Help</a>
+                </li>
+                <li class="nav__item nav__item--profile">
+                  <a href="#" class="action">Profile</a>
+                </li>
+                <li class="nav__item nav__item--logout">
+                  <a href="#" class="action">Logout</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a href="" class="action action--logout">Log out</a>
-            </li>
-          </ul>
-        </div>
+          </ol>
+        </nav>
       </header>
     </div>
 
-    <section class="content content--view">
-      <nav class="content__nav nav--course">
-        <h2 class="sr">CourseX navigation</h2>
-        <ol class="nav--course__list">
-          <li><a class="nav--course__item nav__item--courseware" href="">Course Content</a></li>
-          <li><a class="nav--course__item nav__item--discussion" href="">Discussion</a></li>
-          <li><a class="nav--course__item nav__item--wiki" href="">Wiki</a></li>
-          <li><a class="nav--course__item nav__item--progress" href="">Progress</a></li>
-          <li><a class="nav--course__item nav__item--textbook" href="">Textbook</a></li>
+    <div class="wrapper--nav">
+      <nav class="nav nav--course">
+        <h2 class="title title--section">HarvardX PH207x's Course Navigation</h2>
+
+        <ol class="list--nav">
+          <li class="nav__item nav__item--coursecontent is-current">
+            <a class="action" href="">Course Content <span class="indicator--current">(Current)</span></a>
+          </li>
+          <li class="nav__item nav__item--discussion">
+            <a class="action" href="">Discussion</a>
+          </li>
+          <li class="nav__item nav__item--wiki">
+            <a class="action" href="">Wiki</a>
+          </li>
+          <li class="nav__item nav__item--progress">
+            <a class="action" href=""><span class="indicator--context">Your</span> Progress</a>
+          </li>
+          <li class="nav__item nav__item--textbook">
+            <a class="action" href="">Textbook</a>
+          </li>
         </ol>
       </nav>
 
+      <nav class="nav nav--user-mode">
+        <h2 class="title title--section">View HarvardX PH207x as a(n):</h2>
 
-      <article class="content__main">
+        <ol class="list--nav">
+          <li class="nav__item nav__item--instructor is-current">
+            <a class="action" href="">Instructor  <span class="indicator--current">(Current)</span></a>
+          </li>
+          <li class="nav__item nav__item--student">
+            <a class="action" href="">Student</a>
+          </li>
+          <li class="nav__item nav__item--guest">
+            <a class="action" href="">Guest</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
 
-        <header class="content__main__header">
-          <h2 class="page-title">Course Updates and News - Right sidebar layout</h2>
-        </header>
+    <div class="wrapper--content">
+      <section class="content content--main">
+        <h2 class="content--main__title title title--section">Course Updates &amp; News</h2>
 
+        <section class="content--main__updates">
+          <ol class="list--updates list--content">
+            <li class="content__item">
+              <article class="update">
+                <header class="update__header">
+                  <h3 class="title">Welcome To Ph207x!</h3>
+                  <span class="time--posted">September 23, 2013</span>
+                </header>
 
+                <div class="update__copy">
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, <a href="">dapibus ac facilisis in</a>, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.<p>
 
+                  <p>Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Donec sed odio dui. <a href="">Fusce dapibus</a>, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                </div>
 
+                <footer class="update__footer">
+                  <p class="author">
+                    <span class="indicator--context">Written by:</span>
+                    <span class="author__name">Matt Tracker</span>
+                  </p>
+                </footer>
+              </article>
+            </li>
 
-      </article>
+            <li class="content__item">
+              <article class="update">
+                <header class="update__header">
+                  <h3 class="title">Welcome To PH207x!</h3>
+                  <span class="time--posted">September 23, 2013</span>
+                </header>
 
-      <aside class="content__supplementary">
+                <div class="update__copy">
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, <a href="">dapibus ac facilisis in</a>, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.<p>
 
+                  <p>Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Donec sed odio dui. <a href="">Fusce dapibus</a>, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                </div>
+
+                <footer class="update__footer">
+                  <p class="author">
+                    <span class="indicator--context">Written by:</span>
+                    <span class="author__name">Matt Tracker</span>
+                  </p>
+                </footer>
+              </article>
+            </li>
+
+            <li class="content__item">
+              <article class="update">
+                <header class="update__header">
+                  <h3 class="title">Tires Kicked and Fires Lit For PH207x!</h3>
+                  <span class="time--posted">September 15, 2013</span>
+                </header>
+
+                <div class="update__copy">
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, <a href="">dapibus ac facilisis in</a>, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.<p>
+
+                  <p>Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Donec sed odio dui. <a href="">Fusce dapibus</a>, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                </div>
+
+                <footer class="update__footer">
+                  <p class="author">
+                    <span class="indicator--context">Written by:</span>
+                    <span class="author__name">Hondo MacLean</span>
+                  </p>
+                </footer>
+              </article>
+            </li>
+
+            <li class="content__item">
+              <article class="update">
+                <header class="update__header">
+                  <h3 class="title">Requirements for PH207x</h3>
+                  <span class="time--posted">September 7, 2013</span>
+                </header>
+
+                <div class="update__copy">
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, <a href="">dapibus ac facilisis in</a>, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.<p>
+
+                  <p>Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Donec sed odio dui. <a href="">Fusce dapibus</a>, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                </div>
+
+                <footer class="update__footer">
+                  <p class="author">
+                    <span class="indicator--context">Written by:</span>
+                    <span class="author__name">Bruce Sato</span>
+                  </p>
+                </footer>
+              </article>
+            </li>
+          </ol>
+        </section>
+      </section>
+
+      <aside class="content content--supplemental">
+        <h2 class="content--supplemental__title title title--section">Course Handouts</h2>
+
+        <ul class="list--nav">
+          <li class="nav__item">
+            <a class="action action-link" href="#">Framingham Data Set for Stata <span class="indicator--context">(external link)</span></a>
+          </li>
+          <li class="nav__item">
+            <a class="action action--file" href="#">Framingham Data Set for Stata <span class="indicator--context">(downloadable file)</span></a>
+          </li>
+          <li class="nav__item">
+            <a class="action action--pdf" href="#">Framingham Data Set for Stata <span class="indicator--context">(PDF file)</span></a>
+          </li>
+        </ul>
       </aside>
-    </section>
+    </div>
 
-    <footer class="footer--primary" role="contentinfo">
+    <div class="wrapper--footer">
+      <footer class="footer--app" role="contentinfo">
+        <nav class="nav nav--org">
+          <h2 class="title title--section">edX Organizational Information</h2>
 
-    </footer>
+          <ol class="list--nav">
+            <li class="nav__item nav__item--about">
+              <a href="#" class="action">About <span class="indicator--context">edX</span></a>
+            </li>
+            <li class="nav__item nav__item--jobs">
+              <a href="#" class="action">Jobs <span class="indicator--context">at edX</span></a>
+            </li>
+            <li class="nav__item nav__item--press">
+              <a href="#" class="action"><span class="indicator--context">Especially for</span> Press</a>
+            </li>
+            <li class="nav__item nav__item--faqs">
+              <a href="#" class="action"><abbr title="Frequently Asked Questions">FAQs</abbr></a>
+            </li>
+            <li class="nav__item nav__item--contact">
+              <a href="#" class="action">Contact <span class="indicator--context">edX</span></a>
+            </li>
+          </ol>
+        </nav>
+
+        <nav class="nav nav--elsewhere">
+          <h2 class="title title--section">edX Elsewhere</h2>
+
+          <ol class="list--nav">
+            <li class="nav__item nav__item--meetup">
+              <a href="#" class="action" rel="external">
+                <i class="icon-file-text"></i>
+                <span class="indicator--context">Meetup</span>
+              </a>
+            </li>
+
+            <li class="nav__item nav__item--facebook">
+              <a href="#" class="action" rel="external">
+                <i class="icon-file-text"></i>
+                <span class="indicator--context">Facebook</span>
+              </a>
+            </li>
+
+            <li class="nav__item nav__item--twitter">
+              <a href="#" class="action" rel="external">
+                <i class="icon-file-text"></i>
+                <span class="indicator--context">Twitter</span>
+              </a>
+            </li>
+
+            <li class="nav__item nav__item--google+">
+              <a href="#" class="action action" rel="external">
+                <i class="icon-file-text"></i>
+                <span class="indicator--context">Google+</span>
+              </a>
+            </li>
+
+            <li class="nav__item nav__item--youtube">
+              <a href="#" class="action action" rel="external">
+                <i class="icon-file-text"></i>
+                <span class="indicator--context">Youtube</span>
+              </a>
+            </li>
+          </ol>
+        </nav>
+
+        <div class="footer--app__colophon">
+          <h3 class="title">About edX</h3>
+          <div class="copy">
+            <p>EdX is a non-profit created by founding partners Harvard and MIT whose mission is to bring the best of higher education to students of all ages anywhere in the world, wherever there is Internet access. EdX's free online MOOCs are interactive and subjects include computer science, public health, and artificial intelligence.</p>
+          </div>
+        </div>
+
+        <div class="footer--app__legal">
+          <div class="statement--copyright">
+            <p class="copy">&copy; 2013 edX, some rights reserved.</p>
+          </div>
+
+          <nav class="nav nav--legal">
+            <h2 class="title title--section">edX Legal  &amp; Administrative Information</h2>
+
+            <ol class="list--nav">
+              <li class="nav__item nav__item--meetup">
+                <a href="#" class="action">Terms of Service</a>
+              </li>
+
+              <li class="nav__item nav__item--honor-code">
+                <a href="#" class="action">Honor Code</a>
+              </li>
+
+              <li class="nav__item nav__item--privacy-policy">
+                <a href="#" class="action">Privacy Policy</a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </footer>
+    </div>
   </div>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
