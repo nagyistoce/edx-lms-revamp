@@ -14,10 +14,16 @@
 
 ## Views ##
 * frame
-* login/registration
+* courseware home
+* course updates
+* progress
 * dashboard
 * course listing
-* course detail
+* login/registration
 
 
 ***
+
+## Standards ##
+* BEM examples
+* common state names

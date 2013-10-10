@@ -111,8 +111,6 @@ $d-red-t1: rgba($d-red,0.25);
 $d-red-t2: rgba($d-red,0.50);
 $d-red-t3: rgba($d-red,0.75);
 
-
-
 // ====================
 
 // fonts
@@ -129,13 +127,13 @@ $f-monospace: 'Bitstream Vera Sans Mono', Consolas, Courier, monospace;
 $max-width: 1280px;
 $min-width: 700px;
 $grid-columns: 12;                                                  // make grid 12 columns
-$gutter: $baseline-v;                                                 // gutter b/t columns
+$gutter: $baseline-v;                                               // gutter b/t columns
 
 // grid (neat-based) - responsive
 $bp-m: new-breakpoint(max-width 500px 4);                           // mobile devices - make grid 4 columns
 $bp-ds: new-breakpoint(min-width 500px max-width 760px 6);          // small displays - make grid 6 columns
 $bp-dm: new-breakpoint(min-width 760px max-width 1024px 12);        // medium displays - make grid 12 columns
-$bp-dl: new-breakpoint(min-width 1024px 12);                        // medium displays - make grid 12 columns
+$bp-dl: new-breakpoint(min-width 1024px 12);                        // large displays - make grid 12 columns
 
 // ====================
 
