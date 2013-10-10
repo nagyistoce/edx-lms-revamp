@@ -9,21 +9,11 @@
 ***
 
 ## HTML Class Names ##
-http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
 
-.block{}
-.block__element{}
-.block--modifier{}
-
-e.g.
-
-.person{}
-.person__hand{}
-.person--female{}
-.person--female__hand{}
-.person__hand--left{}
-
-http://smacss.com/
+* Use BEM for layout/module-level elements - http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
+* Use nested common, content/purpose-driven class names for elements inside of modules (.title, .copy, .actions)
+* stateful names (is-hidden, is-shown, is-dragging, is-dropping, has-actions, is-not-loggedin, is-loggedin)
+* Adhere to nesting/philosophy of http://smacss.com/
 
 ***
 

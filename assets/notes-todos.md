@@ -2,11 +2,11 @@
 
 ## UI ##
 * responsive - think mobile view first
-* add more animations
+* add more animations X
 * cover navigation cases
 
 ## Theming ##
-* use abstracted color values
+* use abstracted color values X
 * proof all cases
 *
 
@@ -25,5 +25,5 @@
 ***
 
 ## Standards ##
-* BEM examples
+* BEM examples / When not to BEM
 * common state names
