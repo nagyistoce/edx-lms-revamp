@@ -165,56 +165,82 @@ $anim-distance-offviewport: ($baseline-h*100);                         // for la
 
 // ====================
 
-// copy
-$cpy-pdf: 'This is a PDF Document';
-$cpy-ppt: 'This is a Power Point Document';
-$cpy-zip: 'This is a .zip file';
-$cpy-img: 'This is an image/graphic';
-
-// ====================
-
 // application: general colors
 $color-confirm: $d-green;
 $color-warning: $d-yellow;
 $color-error: $d-red;
 $color-status: $d-blue;
 $color-input: $d-blue-s1;
+$color-create: $d-green;
+$color-delete: $d-red;
+$color-support: $d-orange;
 
 // ====================
 
-// application: actions & links
-$bg-action-primary: $d-blue;
-$bg-action-primary-focus: $d-blue-s1;
-$bordercolor-action-primary: $d-blue-s1;
-$bordercolor-action-primary-focus: $d-blue-s2;
-$color-action-primary: $d-blue-l5;
-$color-action-primary-focus: $white;
+// application: general actions
+$color-primary: $d-blue;
+$color-secondary: $d-blue-l1;
+$color-tertiary: $gray-l1;
+$color-quarternary: $gray-l2;
 
-$bg-action-secondary: $d-blue-l3;
-$bg-action-secondary-focus: $d-blue-l1;
-$bordercolor-action-secondary: $d-blue-l1;
-$bordercolor-action-secondary-focus: $d-blue-l1;
-$color-action-secondary: $d-blue;
-$color-action-secondary-focus: $d-blue-l4;
-
-$bg-action-tertiary: $gray-l1;
-$bg-action-tertiary-focus: $gray;
-$bordercolor-action-tertiary: $gray-l2;
-$bordercolor-action-tertiary-focus: $gray-l1;
-$color-action-tertiary: $white;
-$color-action-tertiary-focus: $white;
-
-$bg-action-quarternary: transparent;
-$bg-action-quarternary-focus: $d-blue-t1;
-$bordercolor-action-quarternary: transparent;
-$bordercolor-action-quarternary-focus: $d-blue-t2;
-$color-action-quarternary: $d-blue;
-$color-action-quarternary-focus: $d-blue-s1;
-
+// application: general links
 $color-link: $d-blue;
 $color-link-hover: $d-blue-s1;
 $color-link-active: $d-blue-s1;
 $color-link-visited: $d-blue-d1;
+
+// application: actions & links (button-focused)
+$bg-action-primary: $color-primary;
+$bg-action-primary-focus: saturate($color-primary, 15%);
+$bordercolor-action-primary: saturate($color-primary, 15%);
+$bordercolor-action-primary-focus: saturate($color-primary, 30%);
+$color-action-primary: tint($color-primary, 90%);
+$color-action-primary-focus: tint($color-primary, 95%);
+
+$bg-action-secondary: $color-secondary;
+$bg-action-secondary-focus: saturate($color-secondary, 15%);
+$bordercolor-action-secondary: saturate($color-secondary, 15%);
+$bordercolor-action-secondary-focus: saturate($color-secondary, 30%);
+$color-action-secondary: tint($color-secondary, 90%);
+$color-action-secondary-focus: tint($color-secondary, 95%);
+
+$bg-action-tertiary: $color-tertiary;
+$bg-action-tertiary-focus: saturate($color-tertiary, 15%);
+$bordercolor-action-tertiary: saturate($color-tertiary, 15%);
+$bordercolor-action-tertiary-focus: saturate($color-tertiary, 30%);
+$color-action-tertiary: tint($color-tertiary, 90%);
+$color-action-tertiary-focus: tint($color-tertiary, 95%);
+
+$bg-action-quarternary: $color-quarternary;
+$bg-action-quarternary-focus: saturate($color-quarternary, 15%);
+$bordercolor-action-quarternary: saturate($color-quarternary, 15%);
+$bordercolor-action-quarternary-focus: saturate($color-quarternary, 30%);
+$color-action-quarternary: tint($color-quarternary, 90%);
+$color-action-quarternary-focus: tint($color-quarternary, 95%);
+
+// action-specific: create
+$bg-action-create: $color-create;
+$bg-action-create-focus: saturate($color-create, 15%);
+$bordercolor-action-create: saturate($color-create, 15%);
+$bordercolor-action-create-focus: saturate($color-create, 30%);
+$color-action-create: tint($color-create, 90%);
+$color-action-create-focus: tint($color-create, 95%);
+
+// action-specific: delete
+$bg-action-delete: $color-delete;
+$bg-action-delete-focus: saturate($color-delete, 15%);
+$bordercolor-action-delete: saturate($color-delete, 15%);
+$bordercolor-action-delete-focus: saturate($color-delete, 30%);
+$color-action-delete: tint($color-delete, 90%);
+$color-action-delete-focus: tint($color-delete, 95%);
+
+// action-specific: support
+$bg-action-support: $color-support;
+$bg-action-support-focus: saturate($color-support, 15%);
+$bordercolor-action-support: saturate($color-support, 15%);
+$bordercolor-action-support-focus: saturate($color-support, 30%);
+$color-action-support: tint($color-support, 90%);
+$color-action-support-focus: tint($color-support, 95%);
 
 // ====================
 
@@ -245,10 +271,10 @@ $bg-footer--main: $white;
 $color-footer--main: $gray-l1;
 
 // application: course elements
-// $color-navcourse: $color-link;
-// $color-navcourse-hover: $color-link-hover;
-// $bg-navcourse: transparent;
-// $bg-navcourse-hover: transparent;
+$color-navcourse: $color-link;
+$color-navcourse-hover: $color-link-hover;
+$bg-navcourse: transparent;
+$bg-navcourse-hover: transparent;
 
 // ====================
 

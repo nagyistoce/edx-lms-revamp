@@ -50,46 +50,82 @@ $pink-t3: rgba($pink,0.75);
 
 // application: general colors
 // $color-confirm: ;
-// $color-warning: ;
+$color-warning: $pink-d1;
 // $color-error: ;
 // $color-status: ;
-// $color-input: ;
+$color-input: $blue-s1;
+// $color-create: ;
+// $color-delete: ;
+// $color-support: ;
 
 // ====================
 
-// application: actions & links
-// $bg-action-primary: ;
-// $bg-action-primary-focus: ;
-// $bordercolor-action-primary: ;
-// $bordercolor-action-primary-focus: ;
-// $color-action-primary: ;
-// $color-action-primary-focus: ;
+// application: general actions
+$color-primary: $blue;
+$color-secondary: $blue-l1;
+$color-tertiary: $gray-l1;
+$color-quarternary: $gray-l2;
 
-// $bg-action-secondary: ;
-// $bg-action-secondary-focus: ;
-// $bordercolor-action-secondary: ;
-// $bordercolor-action-secondary-focus: ;
-// $color-action-secondary: ;
-// $color-action-secondary-focus: ;
+// application: general links
+$color-link: $blue;
+$color-link-hover: $blue-s1;
+$color-link-active: $blue-s1;
+$color-link-visited: $blue-d1;
 
-// $bg-action-tertiary: ;
-// $bg-action-tertiary-focus: ;
-// $bordercolor-action-tertiary: ;
-// $bordercolor-action-tertiary-focus: ;
-// $color-action-tertiary:;
-// $color-action-tertiary-focus: ;
+// application: actions & links (button-focused)
+$bg-action-primary: $color-primary;
+$bg-action-primary-focus: saturate($color-primary, 15%);
+$bordercolor-action-primary: saturate($color-primary, 15%);
+$bordercolor-action-primary-focus: saturate($color-primary, 30%);
+$color-action-primary: tint($color-primary, 90%);
+$color-action-primary-focus: tint($color-primary, 95%);
 
-// $bg-action-quarternary: ;
-// $bg-action-quarternary-focus: ;
-// $bordercolor-action-quarternary: ;
-// $bordercolor-action-quarternary-focus: ;
-// $color-action-quarternary: ;
-// $color-action-quarternary-focus: ;
+$bg-action-secondary: $color-secondary;
+$bg-action-secondary-focus: saturate($color-secondary, 15%);
+$bordercolor-action-secondary: saturate($color-secondary, 15%);
+$bordercolor-action-secondary-focus: saturate($color-secondary, 30%);
+$color-action-secondary: tint($color-secondary, 90%);
+$color-action-secondary-focus: tint($color-secondary, 95%);
 
-// $color-link: ;
-// $color-link-hover: ;
-// $color-link-active: ;
-// $color-link-visited: ;
+$bg-action-tertiary: $color-tertiary;
+$bg-action-tertiary-focus: saturate($color-tertiary, 15%);
+$bordercolor-action-tertiary: saturate($color-tertiary, 15%);
+$bordercolor-action-tertiary-focus: saturate($color-tertiary, 30%);
+$color-action-tertiary: tint($color-tertiary, 90%);
+$color-action-tertiary-focus: tint($color-tertiary, 95%);
+
+$bg-action-quarternary: $color-quarternary;
+$bg-action-quarternary-focus: saturate($color-quarternary, 15%);
+$bordercolor-action-quarternary: saturate($color-quarternary, 15%);
+$bordercolor-action-quarternary-focus: saturate($color-quarternary, 30%);
+$color-action-quarternary: tint($color-quarternary, 90%);
+$color-action-quarternary-focus: tint($color-quarternary, 95%);
+
+// action-specific: create
+$bg-action-create: $color-create;
+$bg-action-create-focus: saturate($color-create, 15%);
+$bordercolor-action-create: saturate($color-create, 15%);
+$bordercolor-action-create-focus: saturate($color-create, 30%);
+$color-action-create: tint($color-create, 90%);
+$color-action-create-focus: tint($color-create, 95%);
+
+// action-specific: delete
+$bg-action-delete: $color-delete;
+$bg-action-delete-focus: saturate($color-delete, 15%);
+$bordercolor-action-delete: saturate($color-delete, 15%);
+$bordercolor-action-delete-focus: saturate($color-delete, 30%);
+$color-action-delete: tint($color-delete, 90%);
+$color-action-delete-focus: tint($color-delete, 95%);
+
+// action-specific: support
+$bg-action-support: $color-support;
+$bg-action-support-focus: saturate($color-support, 15%);
+$bordercolor-action-support: saturate($color-support, 15%);
+$bordercolor-action-support-focus: saturate($color-support, 30%);
+$color-action-support: tint($color-support, 90%);
+$color-action-support-focus: tint($color-support, 95%);
+
+// ====================
 
 // ====================
 
