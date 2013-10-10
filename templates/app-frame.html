@@ -29,22 +29,27 @@
 
     <div class="wrapper--header">
       <header class="header--app" role="banner">
-        <h1 class="header--app__logo">
 
-        </h1>
+        <hgroup class="header-app__title">
+          <h1 class="header--app__title__logo">
+            <img src="../static/images/pl-5x5-000.png" alt="edX" />
+          </h1>
 
-        <div class="header--app__locator">
-          <a href="" class="header--app__locator__org">Org</a>
-          <a href="" class="header--app__locator__course">Course</a>
-        </div>
+          <h2 class="header--app__title__locator">
+            <a href="" class="org-name">Org</a>
+            <a href="" class="org-course">Course</a>
+          </h2>
+        </hgroup>
 
         <!-- not logged in -->
         <div class="header--app__account is-not-loggedin">
-          <ul class="nav">
-            <li class="nav__item">
+          <h3 class="title">Access Your edX Account</h3>
+
+          <ul class="nav nav--account">
+            <li class="nav-item">
               <a href="" class="action action--login">Login</a>
             </li>
-            <li class="nav__item">
+            <li class="nav-item">
               <a href="" class="action action--register">Register</a>
             </li>
           </ul>
@@ -52,13 +57,16 @@
 
         <!-- logged in -->
         <div class="header--app__account is-loggedin">
-          <h2><span class="context">Welcome, </span> <span class="account--username">Marcotuts</span></h2>
+          <h3 class="title">
+            <span class="context">Welcome, </span>
+            <span class="username">Marcotuts</span>
+          </h3>
 
-          <ul class="nav nav--dropdown">
-            <li class="nav__item">
+          <ul class="nav nav--account nav--dropdown">
+            <li class="nav-item">
               <a href="" class="action action--notifications">Notifications</a>
             </li>
-            <li class="nav__item">
+            <li class="nav-item">
               <a href="" class="action action--profile">Profile</a>
             </li>
           </ul>
