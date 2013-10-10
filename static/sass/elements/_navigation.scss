@@ -1,0 +1,119 @@
+// edx: LMS - Navigation
+// ====================
+
+// general
+%nav {
+
+  ol, ul {
+    @extend %no-list;
+  }
+
+  .nav-item {
+
+    a {
+
+    }
+  }
+}
+
+// archetype: nav - horizontal
+%nav-inline {
+
+  .nav-item {
+
+    a {
+
+    }
+  }
+}
+
+// archetype: nav - vertical
+%nav-blocks {
+
+  .nav-item {
+
+    a {
+
+    }
+  }
+}
+
+// archetype: nav - tabs
+%nav-tabs {
+
+  .nav-item {
+
+    a {
+
+    }
+  }
+}
+
+// archetype: nav - pagination
+%nav-pagination {
+
+  .nav-item {
+
+    a {
+
+    }
+  }
+}
+
+// archetype: nav - dropdown
+%nav-dropdown {
+
+  .nav-item {
+
+    a {
+
+    }
+  }
+}
+
+// ====================
+
+// primary navigation
+%nav-primary {
+
+  .nav-item {
+
+    a {
+
+    }
+  }
+}
+
+// ====================
+
+// secondary navigation
+%nav-secondary {
+
+  .nav-item {
+
+    a {
+
+    }
+  }
+
+  &.horizontal {
+
+  }
+
+  &.vertical {
+
+  }
+}
+
+// ====================
+
+// footer/peripheral
+%nav-peripheral {
+
+  .nav-item {
+
+    a {
+
+    }
+  }
+}

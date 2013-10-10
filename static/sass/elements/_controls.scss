@@ -1,0 +1,92 @@
+// edX: LMS - Controls
+// ====================
+
+// archetype: buttons
+%btn {
+  @include box-sizing(border-box);
+  @include transition(color 0.25s ease-in-out, border-color 0.25s ease-in-out, background 0.25s ease-in-out, box-shadow 0.25s ease-in-out);
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover, &:active {
+
+  }
+
+  &.disabled, &[disabled] {
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+
+// pill button
+%btn-pill {
+  border-radius: ($baseline-h/5);
+}
+
+%btn-rounded {
+  border-radius: ($baseline-h/2);
+}
+
+// primary button
+%btn-primary {
+  @extend %btn;
+  @extend %btn-pill;
+  padding:($baseline-v/2) $baseline-h;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: 0 ($baseline-h/10) 0 0 $shadow-d1;
+
+  &:hover, &:active {
+
+  }
+
+  &.current, &.active {
+    box-shadow: inset 1px 1px 2px $shadow-d1;
+
+    &:hover, &:active {
+      box-shadow: inset 1px 1px 1px $shadow-d1;
+    }
+  }
+}
+
+// secondary button
+%btn-secondary {
+  @extend %btn;
+  @extend %btn-pill;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $gray-l4;
+  padding:($baseline-v/2) $baseline-h;
+  background: transparent;
+
+  &:hover, &:active {
+    border-color: $blue-s1;
+  }
+
+  &.current, &.active {
+    border-color: $blue-u1;
+  }
+}
+
+// tertiary button
+%btn-tertiary {
+  @extend %btn;
+  @extend %btn-rounded;
+  border-width: 1px;
+  border-style: solid;
+  padding: ($baseline-v/4) ($baseline-h/2);
+  background: transparent;
+
+  &:hover, &:active {
+
+  }
+
+  &.current, &.active {
+
+  }
+}
+
+// ====================
+
+// archetype: modal/dialogue controls
