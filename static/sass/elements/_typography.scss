@@ -198,3 +198,79 @@
   @extend %t-icon;
   @include font-size(36);
 }
+
+// ====================
+
+// application: canned headings
+%hd-lv1 {
+  @extend %t-title1;
+  @extend %t-weight1;
+  margin: 0 0 ($baseline-v*2) 0;
+  color: $color-heading;
+}
+
+%hd-lv2 {
+  @extend %t-title4;
+  @extend %t-weight1;
+  margin: 0 0 $baseline-v 0;
+  color: $color-heading;
+}
+
+%hd-lv3 {
+  @extend %t-title6;
+  @extend %t-weight4;
+  margin: 0 0 $baseline-v 0;
+  color: $color-heading;
+}
+
+%hd-lv4 {
+  @extend %t-title6;
+  @extend %t-weight2;
+  margin: 0 0 $baseline-v 0;
+  color: $color-heading;
+}
+
+%hd-lv5 {
+  @extend %t-title7;
+  @extend %t-weight4;
+  margin: 0 0 ($baseline-v/4) 0;
+  color: $color-heading;
+}
+
+// ====================
+
+// application: canned copy
+%copy-base {
+  @extend %t-copy-base;
+  color: $color-copy;
+}
+
+%copy-lead1 {
+  @extend %t-copy-lead2;
+  color: $color-copy-lead;
+}
+
+%copy-detail {
+  @extend %t-copy-sub1;
+  @extend %t-weight3;
+  color:$color-copy;
+}
+
+%copy-metadata {
+  @extend %t-copy-sub2;
+  color: $color-copy-supplemental;
+}
+
+// ====================
+
+// application: canned links
+%copy-link {
+  border-bottom: 1px solid transparent;
+  color: $color-link;
+  text-decoration: none;
+
+  &:hover, &:active {
+    color: $color-link-focus;
+    border-color: $color-link-focus;
+  }
+}

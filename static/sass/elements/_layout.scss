@@ -1,0 +1,76 @@
+// edX: LMS - Layout
+// ====================
+// NOTE: use .section and .section__ children to control layout of elements when using these.
+
+// one-column
+%layout-1col {
+
+  .l--parent {
+    @include span-columns(12 of 12);
+  }
+
+  .l--A, .l--B, .l--C, .l--D {
+    @include fill-parent;
+  }
+}
+
+// ====================
+
+// two-column (right col small)
+%layout-twocol-2to1 {
+
+  .l--parent {
+
+  }
+
+  .l--A {
+    @include span-columns(8 of 12);
+  }
+
+  .l--B {
+    @include span-columns(4 of 12);
+    @include omega();
+  }
+}
+
+// ====================
+
+// two-column (left col small)
+%layout-twocol-1to2 {
+
+  .l--parent {
+    @include span-columns(12 of 12);
+  }
+
+  .l--A {
+    @include span-columns(4 of 12);
+  }
+
+  .l--B {
+    @include span-columns(8 of 12);
+    @include omega();
+  }
+}
+
+// ====================
+
+// three-column (equal cols)
+%layout-threecol {
+
+  .l--parent {
+    @include span-columns(12 of 12);
+  }
+
+  .l--A {
+    @include span-columns(4 of 12);
+  }
+
+  .l--B {
+    @include span-columns(4 of 12);
+  }
+
+  .l--C {
+    @include span-columns(4 of 12);
+    @include omega();
+  }
+}

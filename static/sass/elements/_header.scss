@@ -1,2 +1,13 @@
 // edx: LMS - Header
 // ====================
+
+// grid/layout
+.wrapper--header {
+  padding: ($baseline-v*2) ($baseline-h*2);
+  background: $bg-header-main;
+  color: $color-header-main;
+}
+
+.header--app {
+  @include outer-container;
+}

@@ -1,2 +1,15 @@
 // edx: LMS - View: Courseware
 // ====================
+
+// NOTE: applied to any course-related views
+.is-in-course {
+
+  .wrapper--nav--course {
+    padding: ($baseline-v*2) ($baseline-h*2) ($baseline-v) ($baseline-h*2);
+    background: $bg-navcourse;
+  }
+
+  .nav--course {
+    @include outer-container;
+  }
+}

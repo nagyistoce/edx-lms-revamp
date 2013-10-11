@@ -1,2 +1,8 @@
 // edx: LMS - View: Course Updates
 // ====================
+// NOTE: scope all rules to be within the designated <body> class
+
+.view--courseupdates {
+  @extend %layout-twocol-2to1;
+
+}

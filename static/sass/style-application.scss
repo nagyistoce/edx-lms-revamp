@@ -30,9 +30,11 @@
 // ====================
 // BASE - foundation
 @import 'base';
+@import 'documentation';                    // internal documentation (uncomment if needed)
 
 // BASE - elements
-@import 'elements/typography';
+@import 'elements/layout';                  // general abstracted out layouts
+@import 'elements/typography';              // font sizes/scale and applied/canned definitions
 @import 'elements/controls';                // buttons, link styles, sliders, etc.
 @import 'elements/navigation';              // all archetypes of navigation
 @import 'elements/header';                  // view/app headers

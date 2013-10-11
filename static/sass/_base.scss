@@ -8,33 +8,12 @@ html {
 }
 
 body {
-  @include font-size(16);
-  @extend %t-copy;
+  @extend %copy-base;
 }
 
 // ====================
 
-[class^="content-"] {
-
-  a {
-    @include transition(color $tmg-avg ease-in-out, border $tmg-avg ease-in-out);
-    text-decoration: none;
-
-    &:link, &:visited {
-      color: $blue-u1;
-      border-bottom: 1px solid transparent;
-    }
-
-    &:hover, &:active {
-      color: $blue-s1;
-      border-bottom: 1px solid $blue-s1;
-    }
-  }
-}
-
-// ====================
-
-// layout
+// base: layout
 [class^="wrapper-"] {
   @extend %wrapper;
   padding: 0;
@@ -50,7 +29,35 @@ body {
 
 // ====================
 
-// elements
+// base: view
+.wrapper--view {
+  background: $bg-view;
+}
+
+// ====================
+
+// base: content
+.wrapper--content {
+  padding: ($baseline-v*2) ($baseline-h*2);
+  background: $bg-content;
+}
+
+.content {
+  @include outer-container;
+}
+
+[class^="content__"], [class^="content--"] {
+
+  a {
+    @extend %copy-link;
+    @include transition(color $tmg-f1 ease-in-out, border $tmg-f1 ease-in-out);
+    text-decoration: none;
+  }
+}
+
+// ====================
+
+// base: elements
 strong {
   @extend %t-weight3;
 }
