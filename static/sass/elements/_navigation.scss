@@ -8,77 +8,69 @@
     @extend %no-list;
   }
 
-  .nav-item {
+  .nav__item {
 
-    a {
+    .action {
 
     }
   }
 }
 
 // archetype: nav - horizontal
-%nav-inline {
+%nav--inline {
+  @extend %nav;
 
-  .nav-item {
+  .nav__item {
 
-    a {
+    .action {
 
     }
   }
 }
 
 // archetype: nav - vertical
-%nav-blocks {
+%nav--blocks {
+  @extend %nav;
 
-  .nav-item {
+  .nav__item {
 
-    a {
+    .action {
 
     }
   }
 }
 
 // archetype: nav - tabs
-%nav-tabs {
+%nav--tabs {
+  @extend %nav;
 
-  .nav-item {
+  .nav__item {
 
-    a {
+    .action {
 
     }
   }
 }
 
 // archetype: nav - pagination
-%nav-pagination {
+%nav--pagination {
+  @extend %nav;
 
-  .nav-item {
+  .nav__item {
 
-    a {
+    .action {
 
     }
   }
 }
 
 // archetype: nav - dropdown
-%nav-dropdown {
+%nav--dropdown {
+  @extend %nav;
 
-  .nav-item {
+  .nav__item {
 
-    a {
-
-    }
-  }
-}
-
-// ====================
-
-// primary navigation
-%nav-primary {
-
-  .nav-item {
-
-    a {
+    .action {
 
     }
   }
@@ -86,12 +78,25 @@
 
 // ====================
 
-// secondary navigation
-%nav-secondary {
+// application: header navigation
+%nav--header {
 
-  .nav-item {
+  .nav__item {
 
-    a {
+    .action {
+
+    }
+  }
+}
+
+// ====================
+
+// application: secondary navigation
+%nav--secondary {
+
+  .nav__item {
+
+    .action {
 
     }
   }
@@ -107,12 +112,25 @@
 
 // ====================
 
-// footer/peripheral
-%nav-peripheral {
+// application: footer/peripheral
+%nav--legal {
 
-  .nav-item {
+  .nav__item {
 
-    a {
+    .action {
+
+    }
+  }
+}
+
+// ====================
+
+// application: course
+%nav--course {
+
+  .nav__item {
+
+    .action {
 
     }
   }

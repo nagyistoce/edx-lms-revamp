@@ -8,14 +8,14 @@ $baseline-h: 20px;                                                  // horizonta
 // ====================
 
 // colors - basic
-$black: rgb(15,15,15);                                              // system black
+$black: rgb(10,10,10);                                              // system black
 $black-t: rgb(0,0,0);
 $black-t0: rgba($black,0.125);
 $black-t1: rgba($black,0.25);
 $black-t2: rgba($black,0.50);
 $black-t3: rgba($black,0.75);
 
-$white: rgb(240,240,240);                                          // system white
+$white: rgb(250,250,250);                                          // system white
 $white-t: rgb(255,255,255);
 $white-t0: rgba($white,0.125);
 $white-t1: rgba($white,0.25);
@@ -185,7 +185,7 @@ $color-quarternary: $gray-l2;
 
 // application: general links
 $color-link: $d-blue;
-$color-link-hover: $d-blue-s1;
+$color-link-focus: $d-blue-s1;
 $color-link-active: $d-blue-s1;
 $color-link-visited: $d-blue-d1;
 
@@ -251,6 +251,8 @@ $color-heading-secondary: $gray-d4;
 $color-heading-tertiary: $gray-d2;
 
 $color-copy: $gray-d1;
+$color-copy-lead: $gray-d2;
+$color-copy-supplemental: $gray-l1;
 
 // ====================
 
@@ -260,21 +262,27 @@ $color-selected: $d-blue-s1;
 
 // ====================
 
-// application: page elements
-$bg-header--main: $white;
-$color-header--main: $black;
+// application: view elements
+$bg-view: $white;
 
-$bg-content--main: $gray-l5;
-$color-content--main: $gray-d1;
+$bg-header-main: $white;
+$color-header-main: $black;
 
-$bg-footer--main: $white;
-$color-footer--main: $gray-l1;
+$bg-content: $gray-l6;
+$color-content: $gray-d1;
+
+$bg-content-main: $gray-l5;
+$color-content-main: $gray-d1;
+
+$bg-footer-main: $white;
+$color-footer-main: $gray-l1;
 
 // application: course elements
-$color-navcourse: $color-link;
-$color-navcourse-hover: $color-link-hover;
-$bg-navcourse: transparent;
-$bg-navcourse-hover: transparent;
+$bg-navcourse: $gray-l6;
+$color-navcourse-link: $color-link;
+$color-navcourse-link-focus: $color-link-focus;
+$bg-navcourse-link: transparent;
+$bg-navcourse-link-focus: transparent;
 
 // ====================
 
@@ -297,5 +305,5 @@ $color-formfieldtip-disabled: $gray-l3;
 
 // application: visual rows
 $bg-row: $white;
-$bg-row-hover: $d-blue-l5;
+$bg-row-focus: $d-blue-l5;
 $bg-row-alt: $gray-l5;

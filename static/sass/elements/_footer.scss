@@ -1,2 +1,12 @@
 // edx: LMS - Footer
 // ====================
+
+.wrapper--footer {
+  padding: ($baseline-v*2) ($baseline-h*2);
+  background: $bg-footer-main;
+  color: $color-footer-main;
+}
+
+.footer--app {
+  @include outer-container;
+}
